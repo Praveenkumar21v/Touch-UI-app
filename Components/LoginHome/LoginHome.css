@@ -1,0 +1,762 @@
+.bg-dark{
+  position: fixed;
+  width: 100%;
+}
+img#LoginLogo {
+    width: 50px;
+    height: 50px;
+    margin-left: 40px;
+    margin-top: 0px;
+  }
+
+.top{
+margin-left: -220px;
+margin-top: -35px;
+
+}
+
+.search{
+    width: 300px;
+    height: 40px;
+    border-radius: 30px;
+    margin-left: 140px;
+    margin-top: -40px;
+    color: rgb(214, 205, 205);
+    background-color:rgb(60, 59, 59);
+    text-align: start;
+    border: none;
+}
+
+input[type='search']::placeholder {
+    color:rgb(211, 206, 206);
+    font-weight:600;
+    margin-left: 20px;
+}
+
+#search{
+    font-size: 23px;
+    color:rgb(211, 206, 206);
+    font-weight: bold;
+    margin-left: 150px;
+    margin-top: -55px;
+}
+
+.navScroll{
+  max-height: 100px
+}
+
+.search:focus {
+    box-shadow: none !important;
+  }
+
+#home{
+    margin-left: 40px;
+    font-size: 30px;
+    color: rgb(183, 176, 176);
+    margin-top: 0px;
+    transition: color 0.3s ease;
+}
+
+#play{
+    font-size: 30px;
+    margin-left: 40px;
+    color: rgb(183, 176, 176);
+    margin-top: 0px;
+    transition: color 0.3s ease;
+}
+
+#friends{
+    font-size: 30px;
+    margin-left: 40px;
+    color: rgb(183, 176, 176);
+    margin-top: 0px;
+    transition: color 0.3s ease;
+}
+
+#notifications{
+    font-size: 30px;
+    margin-left: 40px;
+    color: rgb(183, 176, 176);
+    margin-top: 0px;
+    transition: color 0.3s ease;
+}
+
+#user{
+    font-size: 30px;
+    color: rgb(183, 176, 176);
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.nav-icon {
+    position: relative;
+    color: rgb(183, 176, 176);
+    font-size: 30px;
+    margin-left: 40px;
+    margin-top: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-icon::before {
+    content: " ";
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    width: 100%;
+    height: 2px;
+    background: rgb(20, 59, 213);
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .nav-icon:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .nav-icon:active {
+    color: rgb(20, 59, 213); 
+  }
+
+  .dropdown-menu[data-bs-popper] {
+  margin-left: -100px;
+  margin-top: 10px;
+  background: rgb(35, 35, 35);
+}
+
+.dropdown-item {
+    color: rgb(199, 193, 193);
+}
+  
+#home:hover{
+    color: rgb(12, 51, 206);;
+}
+
+#play:hover{
+    color: rgb(12, 51, 206);  
+}
+
+#friends:hover{
+    color: rgb(12, 51, 206);  
+}
+
+#notifications:hover{
+    color: rgb(12, 51, 206);  
+}
+
+.search-icon {
+    transition: opacity 0.3s ease-in-out;
+  }
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    padding: 20px;
+    color: white;
+    position: fixed;
+    left: 0px;
+    top: 97px;
+    font-size: 18px;
+  }
+  
+  .sidebar-item {
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar-item:hover {
+    background-color: #555;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .modal-content {
+    background-color: #333;
+    color: white;
+  }
+  
+  .modal-header {
+    border-bottom: none;
+  }
+  
+  .modal-title {
+    font-size: 24px;
+  }
+  
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .modal-body button,
+  .modal-body input[type="file"] {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .modal-body button:hover,
+  .modal-body input[type="file"]:hover {
+    background-color: #777;
+  }
+  
+  .modal-footer {
+    border-top: none;
+  }
+  
+  .modal-content {
+    background-color: #333;
+    color: white;
+  }
+  
+  .modal-header {
+    border-bottom: none;
+  }
+  
+  .modal-title {
+    font-size: 24px;
+  }
+  
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .modal-body button,
+  .modal-body input[type="file"] {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+  }
+  
+  .modal-body input[type="file"]::file-selector-button{
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    font-weight:500;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+ 
+.btn-close {
+  background: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27rgba(125, 123, 123, 1)%27%3e%3cpath d=%27M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z%27/%3e%3c/svg%3e");
+}
+
+  
+  .modal-body button:hover,
+  .modal-body input[type="file"]:hover {
+    background-color: #777;
+  }
+  
+  .camera-icon {
+    margin-right: 10px;
+  }
+  
+  .modal-footer {
+    border-top: none;
+  }  
+
+  #b1,#b2{
+width: 150px;
+height: 40px;
+font-size: 16px;
+font-weight: bold;
+color: rgb(52, 50, 50);
+outline: none;
+transition: background-color 0.3s ease;
+  }
+
+  #b1:hover, #b2:hover {
+    background-color: #777;
+  }
+
+  #cameraPreview{
+width: 100%;
+margin-top: 10px;
+transition: margin-top 0.3s ease;
+  }
+ 
+  p{
+    font-weight: bold;
+  }
+
+  @media screen and (max-width:1024px) {
+    .bg-dark{
+      position: fixed;
+      width: 100%;
+      height: 70px;
+      
+    }
+    img#LoginLogo {
+      margin-top: 5px;
+      margin-left: 0px;
+  }
+    
+ #t1{
+  margin-top: -45px;
+  margin-left: -40px;
+ }
+    
+ .search{
+        margin-left: 180px;
+        margin-top: -48px;
+    }
+    
+    #search{
+        font-size: 23px;
+        margin-left: 195px;
+        margin-top: -55px;
+    }
+    
+    #home{
+        margin-left: 0px;
+        font-size: 30px;
+        margin-top: -10px;
+    }
+    
+    #play{
+        font-size: 30px;
+        margin-left: 0px;
+        margin-top: -10px;
+    }
+    
+    #friends{
+        font-size: 30px;
+        margin-left: 0px;
+        margin-top: -10px;
+    }
+    
+    #notifications{
+        font-size: 30px;
+        margin-left: 0px;
+        margin-top: -10px;
+    }
+    
+    #user{
+        font-size: 30px;
+        color: rgb(183, 176, 176);
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+
+      .dropdown-menu[data-bs-popper] {
+      margin-left: -90px;
+      margin-top: 10px;
+      background: rgb(35, 35, 35);
+    }
+
+      .sidebar {
+        width: 200px;
+        height: 100%;
+        padding: 20px;
+        top: 70px;
+        font-size: 16px;
+      }
+      
+      .sidebar-item {
+        cursor: pointer;
+        text-align: center;
+        margin-bottom: 15px;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+      
+      .sidebar-item:hover {
+        background-color: #555;
+      }
+      
+      .main-content {
+        flex: 1;
+        padding: 20px;
+      }
+      
+      .modal-content {
+        background-color: #333;
+        color: white;
+      }
+      
+      .modal-header {
+        border-bottom: none;
+      }
+      
+      .modal-title {
+        font-size: 24px;
+      }
+      
+      .modal-body button:hover,
+      .modal-body input[type="file"]:hover {
+        background-color: #777;
+      }
+      
+      .modal-footer {
+        border-top: none;
+      }
+      
+      .modal-content {
+        background-color: #333;
+        color: white;
+      }
+      
+      .modal-header {
+        border-bottom: none;
+      }
+      
+      .modal-title {
+        font-size: 24px;
+      }
+      
+      .modal-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .modal-body button,
+      .modal-body input[type="file"] {
+        margin-top: 15px;
+        padding: 10px;
+        background-color: #555;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        display: flex;
+        align-items: center;
+      }
+      
+      .modal-body input[type="file"]::file-selector-button{
+        background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+        font-weight:500;
+        outline: none;
+        border: none;
+        box-shadow: none;
+        border-radius: 10px;
+        transition: background-color 0.3s ease;
+    }
+     
+      
+      .modal-body button:hover,
+      .modal-body input[type="file"]:hover {
+        background-color: #777;
+      }
+      
+      .camera-icon {
+        margin-right: 10px;
+      }
+      
+      .modal-footer {
+        border-top: none;
+      }  
+    
+      #b1,#b2{
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(52, 50, 50);
+    outline: none;
+    transition: background-color 0.3s ease;
+      }
+    
+      #b1:hover, #b2:hover {
+        background-color: #777;
+      }
+    
+      #cameraPreview{
+    width: 100%;
+    margin-top: 10px;
+    transition: margin-top 0.3s ease;
+      }
+     
+      p{
+        font-weight: bold;
+      }
+      .nav-icon::before {
+        content: " ";
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 2px;
+        background: rgb(20, 59, 213);
+        border-radius: 5px;
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+      }
+
+.modal{
+  width: 400px;
+  margin-left: 300px;
+
+
+}
+      
+  }
+
+  @media screen and (max-width:768px) {
+    .sidebar {
+     display: none;
+    }
+
+    img#LoginLogo {
+        width: 50px;
+        height: 50px;
+        margin-left: 0px;
+        margin-top: 0px;
+      }
+    
+    .top{
+    margin-left: -220px;
+    margin-top: -35px;
+    
+    }
+    
+    .search{
+        margin-left: 200px;
+        margin-top: -50px;
+    }
+    
+    #search{
+        font-size: 23px;
+        color:rgb(211, 206, 206);
+        font-weight: bold;
+        margin-left: 210px;
+        margin-top: -55px;
+    }
+
+    #home{
+        margin-left: 40px;
+        font-size: 25px;
+        margin-top: 0px;
+      }
+    
+    #play{
+        font-size: 25px;
+        margin-left: 40px;
+        margin-top: 0px;
+      }
+    
+    #friends{
+      font-size: 25px;
+      margin-left: 40px;
+      margin-top: 0px;
+    }
+    
+    #notifications{
+      font-size: 25px;
+      margin-left: 40px;
+      margin-top: 0px;
+    }
+    
+    #user{
+      font-size: 25px;
+      margin-left: 40px;
+      margin-top: 10px;
+    }
+    
+    .nav-icon {
+        position: relative;
+        color: rgb(183, 176, 176);
+        font-size: 30px;
+        margin-left: 0px;
+        margin-top: 0px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: color 0.3s ease;
+      }
+      
+      .nav-icon::before {
+        content: " ";
+        position: absolute;
+        bottom: 0px;
+        left: 15px;
+        width: 10%;
+        height: 2px;
+      }
+
+    
+      .dropdown-menu[data-bs-popper] {
+      margin-left: 80px;
+      margin-top: -80px;
+      background: rgb(35, 35, 35);
+    }
+    
+    .dropdown-item {
+        color: rgb(199, 193, 193);
+    }
+   
+      p{
+        font-weight: bold;
+      }
+.navbar-toggler{
+  background-color: rgb(66, 65, 65);
+  margin-top: -10px;
+  color: grey;
+} 
+.navbar-toggler-icon{
+background: url('data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27rgba%28125, 123, 123, 1%29%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e');
+}                                                                                                  
+  }
+
+  @media screen and (max-width:630px) {
+    .search{
+      display: none;
+    }
+#search{
+  display: none;
+}
+.top{
+  margin-left: 100px;
+}
+  }
+
+  @media screen and (max-width:426px) {
+    #home{
+      margin-left: 0px;
+      font-size: 25px;
+      margin-top: 0px;
+    }
+  
+  #play{
+      font-size: 25px;
+      margin-left: 0px;
+      margin-top: 0px;
+    }
+  
+  #friends{
+    font-size: 25px;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  
+  #notifications{
+    font-size: 25px;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  
+  #user{
+    font-size: 25px;
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+  
+  .nav-icon {
+      position: relative;
+      color: rgb(183, 176, 176);
+      font-size: 30px;
+      margin-left: 0px;
+      margin-top: 0px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    .nav-icon::before {
+      content: " ";
+      position: absolute;
+      bottom: 0px;
+      left: -20px;
+      width: 10%;
+      height: 2px;
+    }
+  }
+
+  @media screen and (max-width:376px) {
+    #t1{
+      margin-left: 50px;
+      margin-top: -40px;
+    }
+    img#LoginLogo{
+      margin-left: 20px;
+      margin-top: -5px;
+    }
+    .nav-icon {
+      position: relative;
+      color: rgb(183, 176, 176);
+      font-size: 30px;
+      margin-left: 0px;
+      margin-top: 0px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    .nav-icon::before {
+      content: " ";
+      position: absolute;
+      bottom: 0px;
+      left: -18px;
+      width: 10%;
+      height: 2px;
+    }
+    .dropdown-menu[data-bs-popper] {
+      margin-left: 25px;
+      margin-top: 0px;
+      background: rgb(35, 35, 35);
+    }
+  }
+
+  @media screen and (max-width:320px) {
+    #t1{
+      margin-left: 150px;
+      margin-top: -40px;
+    }
+    img#LoginLogo{
+      margin-left: 20px;
+      margin-top: 0px;
+    }
+    .nav-icon {
+      position: relative;
+      color: rgb(183, 176, 176);
+      font-size: 30px;
+      margin-left: 0px;
+      margin-top: 0px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    .nav-icon::before {
+      content: " ";
+      position: absolute;
+      bottom: 0px;
+      left: -10px;
+      width: 9%;
+      height: 2px;
+    }
+    .dropdown-menu[data-bs-popper] {
+      margin-left: 25px;
+      margin-top: 0px;
+      background: rgb(35, 35, 35);
+    }
+  }

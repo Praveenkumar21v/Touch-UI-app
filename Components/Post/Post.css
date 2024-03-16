@@ -1,0 +1,177 @@
+.main {
+    padding: 20px;
+  }
+  
+  .wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .left-col {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .post {
+    background-color: #fff;
+    margin-top: 90px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width:450px;
+    margin-left: 50px;
+    background-color: rgb(46, 42, 42);
+    color: white;
+  }
+  
+  .post-image {
+    width: fit-content;
+    object-fit: cover;
+    margin-top: -8px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  
+#options{
+    margin-top: -10px;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .user {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-pic img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 0px;
+  }
+  
+  .username {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  
+  .likes {
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 30px;
+    margin-top: 10px;
+    color: rgb(189, 186, 186);
+  }
+  
+  .descriptions {
+    margin-left: 30px;
+    font-weight: normal;
+    font-size: 14px;
+  }
+  
+  .comment-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+
+  
+  
+  .comment-box {
+    flex: 1;
+    height: 40px;
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: none;
+    margin-left: 10px;
+    background:rgb(75, 73, 73);
+    color: white;
+  }
+  
+  .comment-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .comment-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  #heart{
+    font-size: 26px;
+    margin-top: 20px;
+    margin-left: 30px;
+color: rgb(202, 201, 201);
+cursor: pointer;
+
+  }
+
+  #comment{
+    font-size: 26px;
+    margin-top: 20px;
+    margin-left: 30px;
+    color: rgb(202, 201, 201);
+    cursor: pointer;
+
+  }
+
+
+  #smile{
+    font-size: 26px;
+    color: rgb(202, 201, 201);
+    cursor: pointer;
+}
+
+  .user{
+    font-weight: bold;
+  }
+
+  .post-time{
+    font-weight: normal;
+    font-size: 13px;
+    color: #c2bfbf;
+    margin-left: 30px;
+  }
+  
+  .options-menu {
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(34, 33, 33);
+    padding: 8px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1; 
+  }
+  
+  .options-menu p {
+    margin: 0;
+    padding: 8px;
+    color: rgb(117, 114, 114);
+    cursor: pointer;
+  }
+  
+  .options-menu p:hover {
+    color: rgb(186, 180, 180);  
+  }
+  
+  
+  
